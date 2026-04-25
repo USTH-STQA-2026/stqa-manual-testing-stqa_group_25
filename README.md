@@ -16,17 +16,17 @@ Hệ thống cần kiểm thử: **Quản lý mượn sách Thư viện ABC** �
 
 | | Thông tin |
 |---|---|
-| **Tên nhóm** | `<!-- VD: Nhóm 1 -->` |
-| **Lớp** | `<!-- VD: SE001.P11 -->` |
-| **Học kỳ** | `<!-- VD: HK2 2025-2026 -->` |
+| **Tên nhóm** | `STQA_25` |
+| **Lớp** | `ICT2.012` |
+| **Học kỳ** | `HK2 2025-2026` |
 
-| # | MSSV | Họ và tên | Vai trò |
-|---|------|-----------|---------|
-| 1 | | | Nhóm trưởng |
-| 2 | | | Thành viên |
-| 3 | | | Thành viên |
-| 4 | | | Thành viên |
-
+| # |   MSSV    |      Họ và tên       |   Vai trò   |
+|---|-----------|----------------------|-------------|
+| 1 | 23BI14269 | CẤN PHÚ THANH LONG   | Nhóm trưởng |
+| 2 | 23BI14373 | LÊ HUY QUANG         | Thành viên  |
+| 3 | 23BI14327 | LƯU GIA NAM          | Thành viên  |
+| 4 | 23BI14278 | TRẦN NGỌC QUANG MINH | Thành viên  |
+| 5 | 23BA14151 | NGUYỄN BÁ KHOA       | Thành viên  |
 ---
 
 ## 📖 Trước khi bắt đầu — Đọc gì, ở đâu? / Before You Start
