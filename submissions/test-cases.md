@@ -6,7 +6,7 @@
 
 | Thông tin | |
 |---|---|
-| **Nhóm** | `<!-- Tên nhóm -->` |
+| **Nhóm** | `Group 25` |
 | **Ngày tạo** | `<!-- DD/MM/YYYY -->` |
 | **Hệ thống** | https://stqa.rbc.vn |
 | **Tham chiếu** | SRS v1.0 |
@@ -30,6 +30,21 @@
 | | Sai | `wrongpass` | Thông báo lỗi |
 | Ô nhập có rỗng? | Không rỗng | (giá trị bất kỳ) | Xử lý bình thường |
 | | Rỗng | `""` | Thông báo "Vui lòng nhập..." |
+
+### IDM — View book list (REQ-02)
+
+| Đặc tính (Characteristic) | Phân vùng (Block) | Giá trị đại diện (Value) | Kết quả mong đợi |
+|---|---|---|---|
+| Role of the logged-in user? | Librarian | `librarian@library.com` | Views all 20 books with complete details |
+| | Member | `ba.nguyen@email.com` | Views all 20 books with complete details |
+| Display status of the book? | Available | BOOK001, BOOK002 | Displays status as "Available" |
+| | Borrowed | BOOK003 (currently borrowed by MEM002) | Displays status as "Borrowed" |
+| | Lost | BOOK007, BOOK020 | Displays status as "Lost" |
+| Is the displayed information complete? | Complete with 5 fields: title, author, genre, year, status | BOOK001 | Displays: "Lập trình Flutter cơ bản", "Nguyễn Minh Đức", "Công nghệ", "2023", "Available" |
+| Real-time update after an action? | After borrowing a book | Borrow BOOK001 | Status of BOOK001 immediately changes to "Borrowed" without needing a refresh |
+| | After returning a book | Return BOOK003 | Status of BOOK003 immediately changes to "Available" |
+
+---
 
 ### IDM — Tìm kiếm sách (REQ-03)
 
