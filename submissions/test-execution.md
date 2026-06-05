@@ -26,8 +26,7 @@
 | TC-08 | TÌM KIẾM | Hiện sách "Lập trình Flutter cơ bản"  | Hiện sách "Lập trình Flutter cơ bản" | PASS | | |
 | TC-09 | TÌM KIẾM | Báo "Không tìm thấy sách" | Báo "Không tìm thấy sách" | PASS | | |
 | TC-10 | TÌM KIẾM | Hiển thị sách thể loại công nghệ | Hiển thị sách thể loại công nghệ | PASS | | |
-| TC-11 | TÌM KIẾM | Hiển thị sách thể loại công nghệ | Báo không tìm thấy sách nào
-| FAIL | | X |
+| TC-11 | TÌM KIẾM | Hiển thị sách thể loại công nghệ | Báo không tìm thấy sách nào | FAIL | | X |
 | TC-12 | TÌM KIẾM | Báo "Không tìm thấy sách nào" do xung đột lọc | Hiển thị "Không tìm thấy sách" | PASS | | |
 | TC-13 | MƯỢN SÁCH | Sách đổi sang "Đang mượn", sinh phiếu mới | Trạng thái sách chuyển thành "Đang mượn". Hệ thống sinh phiếu mượn mới. | PASS | | |
 | TC-14 | MƯỢN SÁCH | Nút Mượn bị ẩn/vô hiệu hóa ở BOOK003 | Nút (+) Mượn sách bị ẩn đi | PASS | | |
