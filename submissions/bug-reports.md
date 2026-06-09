@@ -45,7 +45,7 @@ Hệ thống không tìm thấy sách.
 Trải nghiệm người dùng kém. Người dùng có thói quen copy/paste từ khóa thường bị dính khoảng trắng thừa và sẽ nghĩ thư viện không có sách đó.
 
 **Minh chứng:**
-``
+![Lỗi không cắt khoảng trắng](images/testcase10.png)
 
 **Đề xuất xử lý:**
 Bổ sung hàm `.trim()` vào biến lưu trữ giá trị của ô input tìm kiếm trước khi gọi API hoặc filter dữ liệu.
@@ -90,7 +90,7 @@ Hệ thống vẫn tìm thấy và hiển thị danh sách các sách thuộc nh
 Lỗi logic cơ bản trong việc kết hợp các tiêu chí truy vấn, gây sai lệch kết quả tra cứu của người dùng.
 
 **Minh chứng:**
-``
+![Lỗi xung đột tìm kiếm](images/testcase14.png)
 
 **Đề xuất xử lý:**
 Kiểm tra lại logic hàm filter kết hợp. Đảm bảo dữ liệu đầu ra phải thỏa mãn đồng thời cả 2 điều kiện `Search` VÀ `Category`.
@@ -135,7 +135,7 @@ Hệ thống chỉ báo trả sách thành công, không hề xuất hiện cả
 Nghiêm trọng đối với quy trình quản lý của Thủ thư, thư viện có nguy cơ thất thoát khoản phí phạt quá hạn do hệ thống không cảnh báo.
 
 **Minh chứng:**
-``
+![Lỗi không cảnh báo quá hạn](images/testcase21.png)
 
 **Đề xuất xử lý:**
 Bổ sung logic check `dueDate < currentDate` tại hàm xử lý button "Trả sách" để hiển thị modal cảnh báo trước khi hoàn tất thủ tục trả.
@@ -180,7 +180,7 @@ Hệ thống chặn thao tác và báo lỗi "Email không hợp lệ".
 Ngăn cản hoàn toàn việc sử dụng luồng Thêm thành viên mới. Lỗi nghiêm trọng (Showstopper) đối với chức năng quản lý người dùng.
 
 **Minh chứng:**
-``
+![Lỗi format email](images/testcase24.png)
 
 **Đề xuất xử lý:**
 Dev cần kiểm tra lại Regular Expression (Regex) xác thực email, khả năng cao đoạn code validate email đang cấu hình sai cú pháp.
@@ -225,7 +225,7 @@ Hệ thống bỏ qua lỗi định dạng và báo thêm thành viên thành c�
 Dẫn đến lưu trữ rác dữ liệu vào Database. Khi hệ thống thực hiện các chức năng tự động như gửi email thông báo quá hạn, các địa chỉ sai định dạng này sẽ làm gián đoạn luồng thực thi (crash).
 
 **Minh chứng:**
-``
+![Lỗi lưu thành viên](images/testcase26.png)
 
 **Đề xuất xử lý:**
 Cần áp dụng bộ lọc (Regex validation) chuẩn hóa ở phía Backend trước khi insert vào CSDL để đảm bảo tính toàn vẹn của dữ liệu.
